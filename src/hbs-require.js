@@ -19,6 +19,7 @@
  * @class HBS
  * @namespace HBS
  * @requires require
+ * @requires jquery
  * @desc HBS (HanBootStrap) is a page initialization and object creation/utility library.
  */
 define([], function () {

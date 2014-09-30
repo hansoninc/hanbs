@@ -18,6 +18,7 @@
 /**
  * @class HBS
  * @namespace HBS
+ * @requires jquery
  * @desc HBS (HanBootStrap) is a page initialization and object creation/utility library.
  */
 (function () {
