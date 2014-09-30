@@ -1,0 +1,21 @@
+{
+  "name": "HanBootStrap",
+  "version": "1.0.0",
+  "authors": [
+    "Dave Rodriguez <dave.rodriguez@hansoninc.com>"
+  ],
+  "description": "HBS (HanBootStrap) is a page initialization and object creation/utility library.",
+  "main": "dist/hbs.min.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "utility",
+    "page",
+    "bootstrap",
+    "module"
+  ],
+  "license": "MIT",
+  "homepage": "http://hansoninc.com"
+}
