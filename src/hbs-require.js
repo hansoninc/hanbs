@@ -150,7 +150,7 @@ define([], function () {
 		for (var i = 0, max = packageParts.length; i < max; i++) {
 			nextPart = packageParts[i];
 			if (typeof (target[nextPart]) === 'undefined') {
-				retVal = false;
+				retVal = null;
 				break;
 			}
 			retVal = target = target[nextPart];
