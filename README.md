@@ -79,7 +79,7 @@ Section controllers are structured similarly to main.js, with an <code>init()</c
 each specific view.
 
 HanBootStrap relies on two data-attributes of the <code>&lt;body&gt;</code> element, **data-section** and **data-page**, to tell it which section controller to load and which page method to run. The **data-page**
- attribute is always optional. If data-page is not specified, only the <code>init()</code> method is run.
+ attribute is always optional.
  
 ```html
 <body data-section="APP.controllers.example" data-page="examplePage">
@@ -88,6 +88,7 @@ HanBootStrap relies on two data-attributes of the <code>&lt;body&gt;</code> elem
 <code>HBS.initPage()</code> will look for an object in the global namespace that matches the value of **data-section**, so it's important that to use <code>HBS.namespace()</code>
 or another method to expose your section controller at that name. In the example above, it expects an object named <code>APP.controllers.example()</code>.
 
-If this object is found, <code>HBS.initPage()</code> will attempt to run the <code>init()</code> function of the loaded controller automatically. If you specified a **data-page** attribute, it will attempt to run that method as well, after <code>init()</code>.
+If this object is found, <code>HBS.initPage()</code> will attempt to run the <code>init()</code> function of the loaded controller automatically.
+If you specified a **data-page** attribute, it will attempt to run that method as well, after <code>init()</code>.  If data-page is not specified, only the <code>init()</code> method is run.
 
  See [example/index.html](example/index.html) for a working example.
