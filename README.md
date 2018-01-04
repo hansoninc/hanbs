@@ -81,7 +81,9 @@ each specific view.
 HanBootStrap relies on two data-attributes of the <code>&lt;body&gt;</code> element, **data-section** and **data-page**, to tell it which section controller to load and which page method to run. The **data-page**
  attribute is always optional. If data-page is not specified, only the <code>init()</code> method is run.
  
- <pre><code>&lt;body data-section=&quot;APP.controllers.example&quot; data-page=&quot;examplePage&quot;&gt;</code></pre>
+```html
+&lt;body data-section=&quot;APP.controllers.example&quot; data-page=&quot;examplePage&quot;&gt;
+```
  
 <code>HBS.initPage()</code> will look for an object in the global namespace that matches the value of **data-section**, so it's important that to use <code>HBS.namespace()</code>
 or another method to expose your section controller at that name. In the example above, it expects an object named <code>APP.controllers.example()</code>.
