@@ -14,7 +14,7 @@ that contains code only needed for a certain section or page.
 ### main.js
 [Example main.js file](example/js/APP/main.js)
 
-<pre><code> 
+```javascript 
 /**
  * @requires HBS
  */
@@ -41,7 +41,7 @@ that contains code only needed for a certain section or page.
     
     HBS.namespace('APP.main', module);
 }());
-</code></pre>
+```
 
 Main.js should be used to bootstrap any JavaScript that's used on every page of the site (for example, navigation pulldowns or search features). Usually these functions are collected in an <code>init()</code> function that runs when the DOM is fully loaded.
 
@@ -55,7 +55,7 @@ We typically use the revealing module pattern when creating controllers. All the
 
 [Example section controller](example/js/APP/controllers/example.js)
 
-<pre><code>
+```javascript
 (function() {
     /**
      * @exports APP.controllers.home
@@ -73,7 +73,7 @@ We typically use the revealing module pattern when creating controllers. All the
 
     HBS.namespace('APP.controllers.example', module);
 }());
-</code></pre>
+```
 
 Section controllers are structured similarly to main.js, with an <code>init()</code> function for code shared among a section or collection of views, and supporting functions for
 each specific view.
