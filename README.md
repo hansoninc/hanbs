@@ -82,7 +82,7 @@ HanBootStrap relies on two data-attributes of the <code>&lt;body&gt;</code> elem
  attribute is always optional. If data-page is not specified, only the <code>init()</code> method is run.
  
 ```html
-&lt;body data-section=&quot;APP.controllers.example&quot; data-page=&quot;examplePage&quot;&gt;
+<body data-section="APP.controllers.example" data-page="examplePage">
 ```
  
 <code>HBS.initPage()</code> will look for an object in the global namespace that matches the value of **data-section**, so it's important that to use <code>HBS.namespace()</code>
