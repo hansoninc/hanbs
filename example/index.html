@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HanBS Example</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Move Bootstrap into your project directory to start! -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<!-- Standard init -->
+<body data-section="APP.controllers.example" data-page="examplePage">
+
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>HanBS example page</h1>
+
+				<p>The body tag for this page has <strong>data-section</strong> and <strong>data-page</strong> attributes that HanBootStrap uses to bootstrap global and local JS.</p>
+				<pre><code>&lt;body <strong>data-section=&quot;<span class="text-danger">APP.controllers.example</span>&quot;</strong> <strong>data-page=&quot;<span class="text-danger">examplePage</span>&quot;&gt;</strong></code></pre>
+
+				<hr>
+
+				<h2 class="h3">Output in this text box comes from main.js</h2>
+				<textarea class="form-control" id="main-js"></textarea>
+
+				<hr>
+
+				<h2 class="h3">Output in this text box comes from the example controller's <code>init()</code> method</h2>
+				<textarea class="form-control" id="section-init"></textarea>
+
+				<hr>
+
+				<h2 class="h3">Output in this text box comes from the example controller's <code>examplePage()</code> method</h2>
+				<textarea class="form-control" id="page-method"></textarea>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../dist/hbs.min.js"></script>
+
+<!-- Add your app main and section controller here -->
+<script src="js/APP/main.js"></script>
+<script src="js/APP/controllers/example.js"></script>
+</body>
+</html>
